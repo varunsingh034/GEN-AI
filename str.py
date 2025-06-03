@@ -68,7 +68,9 @@ s = 'UPflairs pvt ltd'
 # print(s.removeprefix('UP'))
 # print(s.removesuffix('ltd'))
 
-
+age = 10 
+st = f'my age is {age}'
+print(st)
 
 
 
