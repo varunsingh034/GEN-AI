@@ -56,10 +56,19 @@ s = 'UPflairs soLu'
 # print(s.isupper())
 # print(s.isspace())
 
+s = 'UPflairs pvt ltd'
 
-print(s.center(50,'*'))
-print(s.ljust(50,'*'))
-print(s.rjust(50,'*'))
+# print(s.center(50,'*'))
+# print(s.ljust(50,'*'))
+# print(s.rjust(50,'*'))
+# print(s.zfill(50))
+# print(s.swapcase())
+# print(s.encode())
+# print(s.partition(" "))
+# print(s.removeprefix('UP'))
+# print(s.removesuffix('ltd'))
+
+
 
 
 
