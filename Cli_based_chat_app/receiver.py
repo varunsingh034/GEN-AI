@@ -8,8 +8,15 @@ port_num = 7000   # 0--65536
 complete_add = (ip_add,port_num)
 s.bind(complete_add)
 while True:
-    message = s.recv(1024)
-    print(message)
-    data = message[0]
-    data = '\n' # escape char
-    print(data.encode('ascii'))
+    # message = s.recv(1024)
+    # print(message)
+    # data = message[0]
+    # data = '\n' # escape char
+    # print(data.encode('ascii'))
+    
+    message , sender_add = s.recvfrom(1024)
+    print('raw message',message)
+    print('from', sender_add)
+    
+    decoded_message = message.decode('utf-8')
+    print('decoded message',decoded_message)
